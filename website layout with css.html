@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layoutt</title>
+
+<style>
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    margin: 0;
+}
+
+/*header class style code*/
+
+.header{
+  
+    padding: 20px;
+    text-align: center;
+    
+
+}
+
+/*topnav navigation class style code*/
+
+.topnav{
+
+overflow:hidden;
+background-color: #333;
+
+}
+
+.topnav a{
+
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+background-color: #333;
+padding: 14px 16px;
+text-decoration: none;
+
+
+}
+.topnav a:hover{
+
+    background-color: #d2dd;
+    color: black;
+}
+
+/*creat three equal column that floats next to each other*/
+.column1{
+    float: left;
+    width: 25%;
+    padding: 15px;
+   
+}
+
+.column2{
+    float: left;
+    width: 50%;
+    padding: 15px;
+    
+}
+
+.column3{
+    float: left;
+    width: 25%;
+    padding: 15px;
+    
+}
+
+/*clear floats after the columns*/
+
+.row:after{
+
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+@media screen and (max-width: 600px){
+    .column{
+        width: 100%;
+    }
+}
+
+/*footer class style code*/
+  .footer{
+
+    background-color: #f1f1f1;
+    padding: 15px;
+    text-align: center;
+  }
+</style>
+
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+        <p>Change the Browser Windows to see the Responsive</p>
+    </div>
+
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Servise</a>
+        <a href="#">Products</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="row">
+        <div class="column1">
+            <h2>Column1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore porro quod velit praesentium aspernatur amet, 
+            distinctio nam accusamus ad error, neque quidem quam nostrum minus ratione earum saepe mollitia pariatur voluptatem
+            nihil tempora unde reprehenderit aliquid officia. Ipsum vel consequuntur aut veritatis, voluptas illum laborum 
+            consectetur quam quisquam odio doloremque.</p>
+        </div>
+
+        <div class="column2">
+            <h2>Column2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore porro quod velit praesentium aspernatur amet, 
+            distinctio nam accusamus ad error, neque quidem quam nostrum minus ratione earum saepe mollitia pariatur voluptatem
+            nihil tempora unde reprehenderit aliquid officia. Ipsum vel consequuntur aut veritatis, voluptas illum laborum 
+            consectetur quam quisquam odio doloremque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore porro quod velit praesentium aspernatur amet, 
+            distinctio nam accusamus ad error, neque quidem quam nostrum minus ratione earum saepe mollitia pariatur voluptatem
+            nihil tempora unde reprehenderit aliquid officia. Ipsum vel consequuntur aut veritatis, voluptas illum laborum 
+            consectetur quam quisquam odio doloremque.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore porro quod velit praesentium aspernatur amet, 
+            distinctio nam accusamus ad error, neque quidem quam nostru</p>
+        </div>
+
+        <div class="column3">
+            <h2>Column3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore porro quod velit praesentium aspernatur amet, 
+            distinctio nam accusamus ad error, neque quidem quam nostrum minus ratione earum saepe mollitia pariatur voluptatem
+            nihil tempora unde reprehenderit aliquid officia. Ipsum vel consequuntur aut veritatis, voluptas illum laborum 
+            consectetur quam quisquam odio doloremque.</p>
+        </div>
+
+
+
+    </div>
+
+
+<div class="footer">
+    <p>All rights reseved &copy;</p>
+
+
+</div>
+</body>
+</html>
